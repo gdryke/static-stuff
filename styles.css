@@ -10,6 +10,8 @@
     --text-footer: #888;
     --details-bg: #e9ecef;
     --details-text: #6c757d;
+    --id-code-text: #767d87;
+    --id-code-bg: #e0e3e6;
     --shadow: rgba(0,0,0,0.1);
     --link-bg: #007bff;
     --link-bg-hover: #0056b3;
@@ -28,6 +30,8 @@
         --text-footer: #888;
         --details-bg: #3a3a3a;
         --details-text: #888;
+        --id-code-bg: #323232;
+        --id-code-text: #111111;
         --shadow: rgba(0,0,0,0.3);
         --link-bg: #0d6efd;
         --link-bg-hover: #0b5ed7;
@@ -119,18 +123,7 @@ h1 {
     color: var(--details-text);
 }
 
-/* Back link styles (kept for potential future use, but will be removed from HTML) */
-.back-link {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 8px 16px;
-    background-color: var(--back-link-bg);
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 0.9em;
-}
-
-.back-link:hover {
-    background-color: var(--back-link-bg-hover);
+.id-code {
+    background-color: var(--id-code-bg);
+    color: var(--id-code-text);
 }
