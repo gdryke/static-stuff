@@ -1,0 +1,138 @@
+/* Global Styles with Dark Theme Support */
+
+/* Light theme (default) */
+:root {
+    --bg-color: #f5f5f5;
+    --container-bg: white;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --text-muted: #555;
+    --text-footer: #888;
+    --placeholder-bg: #e9ecef;
+    --placeholder-text: #6c757d;
+    --shadow: rgba(0,0,0,0.1);
+    --link-bg: #007bff;
+    --link-bg-hover: #0056b3;
+    --back-link-bg: #6c757d;
+    --back-link-bg-hover: #545b62;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --container-bg: #2d2d2d;
+        --text-primary: #e0e0e0;
+        --text-secondary: #b0b0b0;
+        --text-muted: #a0a0a0;
+        --text-footer: #888;
+        --placeholder-bg: #3a3a3a;
+        --placeholder-text: #888;
+        --shadow: rgba(0,0,0,0.3);
+        --link-bg: #0d6efd;
+        --link-bg-hover: #0b5ed7;
+        --back-link-bg: #6c757d;
+        --back-link-bg-hover: #5a6268;
+    }
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--container-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+h1 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+/* Home page specific styles */
+.home h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.description {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--link-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    min-width: 150px;
+}
+
+.nav-links a:hover {
+    background-color: var(--link-bg-hover);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-footer);
+    font-size: 0.9em;
+}
+
+/* Subpage specific styles */
+.content {
+    color: var(--text-muted);
+    margin-top: 30px;
+}
+
+.placeholder {
+    background-color: var(--placeholder-bg);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--placeholder-text);
+    font-style: italic;
+}
+
+/* Back link styles (kept for potential future use, but will be removed from HTML) */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: var(--back-link-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.back-link:hover {
+    background-color: var(--back-link-bg-hover);
+}
