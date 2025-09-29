@@ -116,9 +116,7 @@ h1 {
     background-color: var(--details-bg);
     padding: 20px;
     border-radius: 5px;
-    text-align: center;
     color: var(--details-text);
-    font-style: italic;
 }
 
 /* Back link styles (kept for potential future use, but will be removed from HTML) */
